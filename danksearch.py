@@ -11,7 +11,6 @@ class Video:
         self.thumbnail=None
         self.title=None
         self.video_id=None
-        self.pafydata={}
     def search(self, name):
         fullcontent = ('http://www.youtube.com/results?search_query=' + name)
         text = requests.get(fullcontent).text
