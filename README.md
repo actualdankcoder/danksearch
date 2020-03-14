@@ -24,7 +24,7 @@ Get video thumbnail as a PIL image object
 No installation is required, download the header only library `danksearch.py` and move it to your project folder
 
 # Supporting Operating Systems
-Should work on any operating system without issues, tested on:
+Should work on any operating system excluding android without any issues, tested on:
 
     - Ubuntu 18.04
     - Windows 10
