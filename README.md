@@ -1,6 +1,11 @@
 # danksearch
 Search youtube videos purely using python requests and BeautifulSoup
 
+# Requirements
+
+There are only 3 requirements:
+
+`pip install Pillow beautifulsoup4 requests`
 # Usage
 Searching YouTube videos is as easy as this
 
