@@ -1,7 +1,7 @@
 #! /usr/bin/python3
 import requests, bs4
 from io import BytesIO
-import PIL
+from PIL import Image
 class ImageDataNotFound(Exception):
     '''No data about the thumbnail could be found because the video wasn't searched yet'''
     pass
@@ -24,9 +24,9 @@ class Video:
         self.url=str(url)
         self.thumbnail=img
         self.title=str(title)
-        self.video_id=a0['href'] 
+        self.video_id=a0['href'][9:] 
     def thumbnail_as_image(self):
         if not self.thumbnail==None:
-            return PIL.Image.open(BytesIO(requests.get(self.thumbnail).content))
+            return Image.open(BytesIO(requests.get(self.thumbnail).content))
         else:
             raise ImageDataNotFound
