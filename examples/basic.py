@@ -1,5 +1,4 @@
 from danksearch import Video
-from PIL import Image
 video=Video()
 video.search("Never gonna give you up")
 print(video.title)
